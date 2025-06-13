@@ -4,8 +4,8 @@ import matplotlib.pyplot as pt
 import numpy as np
 import seaborn as sns
 
+st.title("DIABETES ANALYSIS")
 #import my csv file
 df = pd.read_csv("diabetes.csv")
-st.title("DIABETES DATA")
 st.write(df.head())
 
