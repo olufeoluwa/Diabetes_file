@@ -8,10 +8,12 @@ st.title("DIABETES ANALYSIS")
 
 #import my csv file
 st.markdown("# FIRST FIVE")
+
 df = pd.read_csv("diabetes.csv")
 st.write(df.head())
 
 st.markdown("# LAST FIVE")
+
 df = pd.read_csv("diabetes.csv")
 st.write(df.tail())
 
