@@ -5,6 +5,7 @@ import numpy as np
 import seaborn as sns
 
 st.title("DIABETES ANALYSIS")
+
 #import my csv file
 df = pd.read_csv("diabetes.csv")
 st.write(df.head())
