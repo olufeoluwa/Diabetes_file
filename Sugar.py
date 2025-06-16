@@ -29,10 +29,12 @@ st.markdown("# DATA INFORMATION")
 mum = df.info()
 st.write(mum) 
 
-st.markdown("# UNIVAFIATE ANALYSIS")
 
+st.markdown("# UNIVAFIATE ANALYSIS")
 st.markdown("## Blood Pressure")
-st.write(df["BloodPressure"])
+
 st.write(df["BloodPressure"].describe())
+
 st.write(df["BloodPressure"].head())
+
 st.write(df["BloodPressure"].tail())
