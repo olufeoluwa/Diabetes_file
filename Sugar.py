@@ -51,8 +51,10 @@ st.plotly_chart(fig, use_containeer_width=True)
 
 st.markdown("# BIVAFIATE ANALYSIS")
 st.markdown("## Blood Pressure vs Pregnancies Description")
+df2 = pd.DataFrame(df["BloodPressure"], df["Pregnancies"])
+st.write(df2)
 
-fig2 = px.bar(df, x ='Pregnancies', y ='BloodPressure', title=("Blood Pressure vs Pregnancies Distribution Graph"))
+fig2 = px.bar(df2, x =df["Pregnancies"], y =["BloodPressure"], title=("Blood Pressure vs Pregnancies Distribution Graph"))
 st.plotly_chart(fig2, use_containeer_width=True)
 
 
