@@ -10,7 +10,7 @@ st.title("DIABETES ANALYSIS")
 st.markdown("# FIRST FIVE")
 
 df = pd.read_csv("diabetes.csv")
-st.write(df.head())
+st.table(df.head())
 
 st.markdown("# LAST FIVE")
 
@@ -29,4 +29,10 @@ st.markdown("# DATA INFORMATION")
 mum = df.info()
 st.write(mum) 
 
+st.markdown("# UNIVAFIATE ANALYSIS")
 
+st.markdown("## Blood Pressure")
+st.write(df["BloodPressure"])
+st.write(df["BloodPressure"].describe())
+st.write(df["BloodPressure"].head())
+st.write(df["BloodPressure"].tail())
