@@ -43,13 +43,13 @@ st.markdown("## Blood Pressure Last Data")
 st.write(df["BloodPressure"].tail())
 
 st.markdown("## Blood Pressure Graph")
+
 fig = px.bar(df['BloodPressure'], y ='BloodPressure', title=("Blood Pressure Distribution Graph"))
 st.plotly_chart(fig, use_containeer_width=True)
 
 
 
 st.markdown("# BIVAFIATE ANALYSIS")
-
 st.markdown("## Blood Pressure vs Pregnancies Description")
 
 fig2 = px.bar(df, x ='Pregnancies', y ='BloodPressure', title=("Blood Pressure vs Pregnancies Distribution Graph"))
