@@ -31,10 +31,12 @@ st.write(mum)
 
 
 st.markdown("# UNIVAFIATE ANALYSIS")
-st.markdown("## Blood Pressure")
+st.markdown("## Blood Pressure Description")
 
 st.write(df["BloodPressure"].describe())
 
+st.markdown("## Blood Pressure First Data")
 st.write(df["BloodPressure"].head())
 
+st.markdown("## Blood Pressure Last Data")
 st.write(df["BloodPressure"].tail())
